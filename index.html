@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer</title>
+
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+    <div class="row">
+    <div class="col-md-12">
+      <h1 class="headline">Pomodoro Timer</h1>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-2 col-md-offset-1 alt-timer">
+    <h1 class="alt-txt">Session Length</h1>
+    <div class="temp">
+      <p id="dec1">-</p><h1 id="session"></h1><p id="inc1">+</p>
+    </div>
+  </div>
+
+  <div class="col-md-6 timer">
+    <div id="timer-btn" class="timer-txt">
+      <h1></h1>
+    </div>
+  </div>
+
+  <div class="col-md-2 alt-timer">
+    <h1 class="alt-txt">Break Length</h1>
+    <div class="temp">
+    <p id="dec2">-</p><h1 id="break"></h1><p id="inc2">+</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2 col-md-offset-4 buttons stop pause">
+    <h1 id="toggle">PAUSE</h1>
+  </div>
+  <div class="col-md-2 buttons reset">
+    <h1>RESET</h1>
+  </div>
+</div>
+
+<audio class="alert">
+  <source src="http://trevordrury.com/alert.mp3" type="audio/mpeg">
+</audio>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/index.js"></script>
+
+  </body>
+</html>
